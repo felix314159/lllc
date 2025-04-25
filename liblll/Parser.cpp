@@ -67,8 +67,10 @@ void dev::lll::debugOutAST(ostream& _out, sp::utree const& _this)
 
 		break;
 	case sp::utree_type::int_type: _out << _this.get<int>(); break;
-	case sp::utree_type::string_type: _out << "\"" << _this.get<sp::basic_string<boost::iterator_range<char const*>, sp::utree_type::string_type>>() << "\""; break;
-	case sp::utree_type::symbol_type: _out << _this.get<sp::basic_string<boost::iterator_range<char const*>, sp::utree_type::symbol_type>>(); break;
+	//case sp::utree_type::string_type: _out << "\"" << _this.get<sp::basic_string<boost::iterator_range<char const*>, sp::utree_type::string_type>>() << "\""; break;
+	case sp::utree_type::string_type: _out << "\"" << _this.get<std::string>() << "\""; break;
+	//case sp::utree_type::symbol_type: _out << _this.get<sp::basic_string<boost::iterator_range<char const*>, sp::utree_type::symbol_type>>(); break;
+	case sp::utree_type::symbol_type: _out << _this.get<std::string>(); break;
 	case sp::utree_type::any_type: _out << *_this.get<bigint*>(); break;
 	default: _out << "nil";
 	}

@@ -15,6 +15,7 @@
 	along with solidity.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <cstdint>
 #include <string>
 
 /**

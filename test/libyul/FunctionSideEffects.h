@@ -21,6 +21,7 @@
 #include <test/TestCase.h>
 
 #include <iosfwd>
+#include <fstream>
 #include <string>
 #include <vector>
 #include <utility>

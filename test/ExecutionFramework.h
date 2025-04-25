@@ -22,6 +22,7 @@
 
 #pragma once
 
+#include <boost/rational.hpp>
 #include <test/Options.h>
 
 #include <libsolidity/interface/OptimiserSettings.h>
